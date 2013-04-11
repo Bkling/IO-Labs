@@ -16,13 +16,13 @@ public class TextWriterApp {
 
         out.println();
         out.print("Kling|");
-        out.print("Betsy|");
-        out.print("517 South Worthington Street|");
-        out.print("Greenfield|");
+        out.print("Beth|");
+        out.print("2304 North Ave|");
+        out.print("East Side|");
         out.print("WI|");
-        out.print("53224|");
-        out.print("betsy.kling@yahoo.com|");
-        out.print("414-840-8041");
+        out.print("58214|");
+        out.print("beth.kling@gmail.com|");
+        out.print("414-736-5666");
         out.close();
     }
 }
