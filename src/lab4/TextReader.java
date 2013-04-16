@@ -1,14 +1,13 @@
 
 package lab4;
 /**
- * This class reads text files in the file service class, right now this reader can read
- * CSV, XML, and TXT files.
+ * This class reads TXT file for the file service class.
  * @author Benjamin, Email Bkling@my.wctc.edu, Version 1.0
  */
-public class TextReader implements FileReaderStrategy {
+public class TextReader implements TextReaderStrategy {
 
     @Override
-    public String readFile() throws Exception {
+    public String readFile(String filePath) throws Exception {
         throw new UnsupportedOperationException("Not supported yet.");
     }
     

@@ -61,4 +61,22 @@ public class FileService {
         }
         this.writer = writer;
     }
+
+    public String getFilePath() {
+        return filePath;
+    }
+
+    /**
+     * This method sets the file path for the file service class.
+     *
+     * @param filePath - uses a file path to write or read to a file.
+     * @throws Exception - if the file path is not there, it throws an
+     * exception.
+     */
+    public void setFilePath(String filePath) throws Exception {
+        if (filePath == null) {
+            throw new Exception();
+        }
+        this.filePath = filePath;
+    }
 }

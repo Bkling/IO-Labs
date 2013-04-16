@@ -23,7 +23,7 @@ public class BinaryReaderStrategy implements FileReaderStrategy {
      * @return - a binary file.
      */
     @Override
-    public String readFile() throws Exception {
+    public String readFile(String filePath) throws Exception {
         throw new Exception(NOT_SUPPORTED);
     }
 }

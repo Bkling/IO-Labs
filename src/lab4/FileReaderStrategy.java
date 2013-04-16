@@ -9,7 +9,8 @@ public interface FileReaderStrategy {
 
     /**
      * This method is used so that all the readers below it have to override it,
-     * and write their own readers.
+     * and write their own readers. They also implements the exception too if it
+     * errors out.
      */
-    public abstract String readFile() throws Exception;
+    public abstract String readFile(String filePath) throws Exception;
 }
