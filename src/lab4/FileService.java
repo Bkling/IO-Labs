@@ -14,13 +14,15 @@ public class FileService {
      */
     private FileReaderStrategy reader;
     private FileWriterStrategy writer;
+    private String filePath;
 
     /*
      * Constructor
      */
-    public FileService(FileReaderStrategy reader, FileWriterStrategy writer) {
+    public FileService(FileReaderStrategy reader, FileWriterStrategy writer, String filePath) {
         this.reader = reader;
         this.writer = writer;
+        this.filePath = filePath;
     }
 
     /*

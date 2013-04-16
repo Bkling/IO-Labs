@@ -1,6 +1,6 @@
 
 package lab4;
 
-public class TXTReader {
+public class CsvWriter {
     
 }
