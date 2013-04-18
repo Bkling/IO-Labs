@@ -30,7 +30,7 @@ public class CustomerTextReader implements TextReaderStrategy {
      * This method overrides the interface method to implement it's own.
      *
      * @param filePath - Uses the file path of file to reade it
-     * @return -
+     * @return - a String of info.
      * @throws Exception - if an error occurs exception will be thrown.
      */
     @Override
