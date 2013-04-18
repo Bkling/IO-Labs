@@ -10,10 +10,10 @@ import java.io.IOException;
  *
  * @author Benjamin, Email Bkling@my.wctc.edu, Version 1.0
  */
-public class CustomerTextReader implements TextReaderStrategy {
+public class CustomTextReader implements TextReaderStrategy {
 
     /*
-     * Properites of a CustomerTextReader, these properites also evade magic numbers.
+     * Properites of a CustomTextReader, these properites also evade magic numbers.
      */
     private String ERROR = "Sorry, there was a problem reading this file.";
     private String VERT_BAR = "\\|";
