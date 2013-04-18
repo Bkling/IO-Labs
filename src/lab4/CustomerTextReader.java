@@ -5,19 +5,21 @@ import java.io.FileReader;
 import java.io.IOException;
 
 /**
- * This class uses CSV format for reading a file. this one uses comma's.
+ * This class reads a customer text reader using vertical bars (|) as
+ * separators.
  *
  * @author Benjamin, Email Bkling@my.wctc.edu, Version 1.0
  */
-public class CsvReader implements FileReaderStrategy {
+public class CustomerTextReader implements TextReaderStrategy {
 
     /*
-     * Properites of a CsvTextReader, these properites also evade magic numbers.
+     * Properites of a CustomerTextReader, these properites also evade magic numbers.
      */
     private String ERROR = "Sorry, there was a problem reading this file.";
-    private String COMMA = "\\,";
+    private String VERT_BAR = "\\|";
     private String FULL_NAME = "Full Name: ";
     private String SPACE = " ";
+    private String SPACE_W_COMMA = ", ";
     private String NEW_LINE = "\n";
     private String ADDRESS = "Address: ";
     private String PHONE = "Phone: ";
@@ -39,9 +41,9 @@ public class CsvReader implements FileReaderStrategy {
             in = new BufferedReader(new FileReader(filePath));
             String line = in.readLine();
             while (line != null) {
-                String[] pieces = line.split(COMMA);
+                String[] pieces = line.split(VERT_BAR);
                 info = FULL_NAME + pieces[1] + SPACE + pieces[0] + NEW_LINE + ADDRESS + pieces[2]
-                        + SPACE + pieces[3] + SPACE + pieces[4] + SPACE
+                        + SPACE_W_COMMA + pieces[3] + SPACE_W_COMMA + pieces[4] + SPACE_W_COMMA
                         + pieces[5] + NEW_LINE + PHONE + pieces[7]
                         + NEW_LINE + EMAIL + pieces[6] + NEW_LINE;
                 line = in.readLine();
