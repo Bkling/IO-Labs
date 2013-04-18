@@ -9,7 +9,7 @@ import java.io.IOException;
  *
  * @author Benjamin, Email Bkling@my.wctc.edu, Version 1.0
  */
-public class CsvReader implements FileReaderStrategy {
+public class CsvReader implements TextReaderStrategy {
 
     /*
      * Properites of a CsvTextReader, these properites also evade magic numbers.

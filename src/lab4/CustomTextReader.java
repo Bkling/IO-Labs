@@ -5,7 +5,7 @@ import java.io.FileReader;
 import java.io.IOException;
 
 /**
- * This class reads a customer text reader using vertical bars (|) as
+ * This class reads a custom text reader using vertical bars (|) as
  * separators.
  *
  * @author Benjamin, Email Bkling@my.wctc.edu, Version 1.0

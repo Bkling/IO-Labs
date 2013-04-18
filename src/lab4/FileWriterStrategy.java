@@ -12,5 +12,5 @@ public interface FileWriterStrategy {
      * and write their own writers. They also implements the exception too if it
      * errors out.
      */
-    public abstract String writeToFile(String filePath) throws Exception;
+    public abstract void writeToFile(String filePath, String data) throws Exception;
 }
