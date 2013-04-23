@@ -12,11 +12,6 @@ import java.io.PrintWriter;
  */
 public class CustomTextWriter implements TextWriterStrategy {
 
-    /*
-     * Properties of a custom text writer, properties also evade magic numbers.
-     */
-    private String VERT_BAR = "\\|";
-
     /**
      * This method overrides the interface method and implements it's own.
      *
