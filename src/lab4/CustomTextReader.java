@@ -42,10 +42,10 @@ public class CustomTextReader implements TextReaderStrategy {
             String line = in.readLine();
             while (line != null) {
                 String[] pieces = line.split(VERT_BAR);
-                info = FULL_NAME + pieces[1] + SPACE + pieces[0] + NEW_LINE + ADDRESS + pieces[2]
+                System.out.println(FULL_NAME + pieces[1] + SPACE + pieces[0] + NEW_LINE + ADDRESS + pieces[2]
                         + SPACE_W_COMMA + pieces[3] + SPACE_W_COMMA + pieces[4] + SPACE_W_COMMA
                         + pieces[5] + NEW_LINE + PHONE + pieces[7]
-                        + NEW_LINE + EMAIL + pieces[6] + NEW_LINE;
+                        + NEW_LINE + EMAIL + pieces[6] + NEW_LINE);
                 line = in.readLine();
             }
 

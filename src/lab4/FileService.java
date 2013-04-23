@@ -14,15 +14,13 @@ public class FileService {
      */
     private FileReaderStrategy reader;
     private FileWriterStrategy writer;
-    private String filePath;
 
     /*
      * Constructor
      */
-    public FileService(FileReaderStrategy reader, FileWriterStrategy writer, String filePath) {
+    public FileService(FileReaderStrategy reader, FileWriterStrategy writer) {
         this.reader = reader;
         this.writer = writer;
-        this.filePath = filePath;
     }
 
     /*
@@ -62,21 +60,21 @@ public class FileService {
         this.writer = writer;
     }
 
-    public String getFilePath() {
-        return filePath;
-    }
-
-    /**
-     * This method sets the file path for the file service class.
-     *
-     * @param filePath - uses a file path to write or read to a file.
-     * @throws Exception - if the file path is not there, it throws an
-     * exception.
-     */
-    public void setFilePath(String filePath) throws Exception {
-        if (filePath == null) {
-            throw new Exception();
-        }
-        this.filePath = filePath;
-    }
+//    public String getFilePath() {
+//        return filePath;
+//    }
+//
+//    /**
+//     * This method sets the file path for the file service class.
+//     *
+//     * @param filePath - uses a file path to write or read to a file.
+//     * @throws Exception - if the file path is not there, it throws an
+//     * exception.
+//     */
+//    public void setFilePath(String filePath) throws Exception {
+//        if (filePath == null) {
+//            throw new Exception();
+//        }
+//        this.filePath = filePath;
+//    }
 }
